@@ -63,8 +63,7 @@ public final class ThalesCTVLFunctions
 		String encodedidpwd = null;
 		disableCertValidation();
 			encodedidpwd = Base64.getEncoder().encodeToString(idpassword.getBytes("UTF-8"));
-		//String https_url = "https://52.162.178.57/vts/rest/v2.0/tokenize/";
-	    String https_url = "https://" + ctsip + "/vts/rest/v2.0/tokenize/";
+	        String https_url = "https://" + ctsip + "/vts/rest/v2.0/tokenize/";
 		URL myurl = new URL(https_url);
 		HttpsURLConnection con = (HttpsURLConnection) myurl.openConnection();
 		String jStr = "{\"data\":\"" + inputstring + "\",\"tokengroup\":\"tg1\",\"tokentemplate\":\"tt1\"}";
