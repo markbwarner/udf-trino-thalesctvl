@@ -57,8 +57,8 @@ public final class ThalesCTVLFunctions
 		//String ctsip = System.getenv("CTSIP");
 
 		String userid = "cts-user";
-		String password = "Thales12345!";
-		String ctsip = "20.88.42.242";
+		String password = "yourpwd";
+		String ctsip = "yourip";
 		String idpassword = userid + ":" + password;
 		String encodedidpwd = null;
 		disableCertValidation();
